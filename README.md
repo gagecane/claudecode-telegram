@@ -115,3 +115,29 @@ curl "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/setWebhook?url=https://Y
 | `TELEGRAM_BOT_TOKEN` | required | Bot token from BotFather |
 | `TMUX_SESSION` | `claude` | tmux session name |
 | `PORT` | `8080` | Bridge port |
+
+## Architecture
+
+### Task Automation (Optional)
+
+This project uses Taskplane for task-based automation:
+
+- **Task Areas:** Located in `taskplane-tasks/`
+- **Task Runner:** Configured in `.pi/task-runner.yaml`
+- **Orchestrator:** Configured in `.pi/task-orchestrator.yaml`
+
+See `.pi/CONTEXT.md` for task automation documentation.
+
+## Diagnostics & Telemetry (Optional)
+
+Used for task-based automation and monitoring:
+
+- **Diagnostics:** `.pi/diagnostics/` — Diagnostic outputs
+- **Telemetry:** `.pi/telemetry/` — Metrics and tracking
+- **Supervisor:** `.pi/supervisor/` — Batch monitoring
+
+---
+
+## License
+
+MIT
