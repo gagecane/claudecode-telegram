@@ -29,7 +29,7 @@
       "thinking": "on"
     },
     "context": {
-      "workerContextWindow": 200000,
+      "workerContextWindow": 80000,
       "warnPercent": 70,
       "killPercent": 85,
       "maxWorkerIterations": 20,
@@ -50,7 +50,7 @@
   },
   "orchestrator": {
     "orchestrator": {
-      "maxLanes": 3,
+      "maxLanes": 1,
       "worktreeLocation": "subdirectory",
       "worktreePrefix": "claudecode-telegram-wt",
       "batchIdFormat": "timestamp",
