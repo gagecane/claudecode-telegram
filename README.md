@@ -116,44 +116,7 @@ curl "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/setWebhook?url=https://Y
 | `TMUX_SESSION` | `claude` | tmux session name |
 | `PORT` | `8080` | Bridge port |
 
-## Project Structure
-
-```
-claudecode-telegram/
-├── bridge.py              # Main Telegram webhook server
-├── hooks/
-│   └── send-to-telegram.sh # Stop hook - sends responses to Telegram
-├── pyproject.toml         # Python project configuration
-├── demo.gif               # Demo animation
-└── README.md              # This file
-```
-
 ## Architecture
-
-### Data Flow
-
-1. **Incoming Messages:** Telegram → Cloudflare Tunnel → Bridge Server → tmux → Claude Code
-2. **Outgoing Responses:** Claude Code → Stop Hook → Reads Transcript → Sends to Telegram
-
-### Key Components
-
-| Component | Purpose |
-|-----------|--------|
-| `bridge.py` | Receives Telegram webhooks, injects messages into Claude Code via tmux |
-| `send-to-telegram.sh` | Stop hook that reads Claude's transcript and sends response back |
-| `~/.claude/telegram_pending` | Flag file to track Telegram-initiated messages |
-| `~/.claude/telegram_chat_id` | Stores the chat ID for responses |
-| `~/.claude/history.jsonl` | Session history for resume functionality |
-
-### Ralph Loop Integration
-
-The bridge integrates with Ralph Loop for iterative task execution:
-
-```bash
-/loop <prompt>
-```
-
-This runs up to 5 iterations of a task, automatically continuing until completion.
 
 ### Task Automation (Optional)
 
@@ -165,12 +128,16 @@ This project uses Taskplane for task-based automation:
 
 See `.pi/CONTEXT.md` for task automation documentation.
 
-## Blocked Commands
+## Diagnostics & Telemetry (Optional)
 
-The following Claude Code commands are blocked via Telegram (require interactive terminal):
+Used for task-based automation and monitoring:
 
-```
-/mcp, /help, /settings, /config, /model, /compact, /cost,
-/doctor, /init, /login, /logout, /memory, /permissions,
-/pr, /review, /terminal, /vim, /approved-tools, /listen
-```
+- **Diagnostics:** `.pi/diagnostics/` — Diagnostic outputs
+- **Telemetry:** `.pi/telemetry/` — Metrics and tracking
+- **Supervisor:** `.pi/supervisor/` — Batch monitoring
+
+---
+
+## License
+
+MIT

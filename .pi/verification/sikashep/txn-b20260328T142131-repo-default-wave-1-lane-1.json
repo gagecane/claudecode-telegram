@@ -1,0 +1,16 @@
+{
+  "opId": "sikashep",
+  "batchId": "20260328T142131",
+  "waveIndex": 1,
+  "laneNumber": 1,
+  "repoId": null,
+  "baseHEAD": "dd9024dddddc1120ce4ea094de2aab020c2f1ccd",
+  "laneHEAD": "dd9024dddddc1120ce4ea094de2aab020c2f1ccd",
+  "mergedHEAD": null,
+  "status": "merge_failed",
+  "rollbackAttempted": false,
+  "rollbackResult": null,
+  "recoveryCommands": [],
+  "startedAt": "2026-03-28T21:30:10.944Z",
+  "completedAt": "2026-03-28T21:40:19.992Z"
+}

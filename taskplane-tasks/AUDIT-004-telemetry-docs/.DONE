@@ -1,0 +1,19 @@
+# Task: AUDIT-004 — Telemetry & Diagnostics Docs
+## Status: COMPLETED
+
+**Completed:** 2026-03-28
+
+## Summary
+
+Added Diagnostics & Telemetry section to README.md.
+
+## Files Modified
+
+- `README.md` — Added Diagnostics & Telemetry section
+
+## Verification
+
+✅ Diagnostics & Telemetry section added to README.md
+✅ .DONE file created
+
+---

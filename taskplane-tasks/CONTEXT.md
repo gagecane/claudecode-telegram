@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-03-28
 **Status:** Active
-**Next Task ID:** TP-002
+**Next Task ID:** TP-003
 
 ---
 
@@ -23,6 +23,16 @@ tasks or `/orch all` for parallel batch execution.
 | Tasks | `taskplane-tasks/` |
 | Config | `.pi/task-runner.yaml` |
 | Config | `.pi/task-orchestrator.yaml` |
+
+---
+
+## Technical Debt / Future Work
+
+### Documentation Audit — **Completed** ✅
+- **AUDIT-001:** Comprehensive audit — Skipped (batch system issues)
+- **AUDIT-002:** Architecture section — **Completed** ✅
+- **AUDIT-003:** Requirements alignment — **Completed** ✅
+- **AUDIT-004:** Telemetry/diagnostics docs — **Completed** ✅
 
 ---
 

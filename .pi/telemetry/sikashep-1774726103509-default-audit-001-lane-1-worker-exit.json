@@ -1,0 +1,22 @@
+{
+  "exitCode": 0,
+  "exitSignal": null,
+  "tokens": {
+    "input": 5351,
+    "output": 150,
+    "cacheRead": 5366,
+    "cacheWrite": 0
+  },
+  "cost": null,
+  "toolCalls": 1,
+  "retries": [],
+  "compactions": 0,
+  "durationSec": 62,
+  "lastToolCall": "orch_status",
+  "error": null,
+  "contextUsage": {
+    "tokens": 5500,
+    "contextWindow": 128000,
+    "percent": 4.296875
+  }
+}
