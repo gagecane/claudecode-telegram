@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-03-28
 **Status:** Active
-**Next Task ID:** TP-003
+**Next Task ID:** TP-004
 
 ---
 
@@ -39,3 +39,8 @@ tasks or `/orch all` for parallel batch execution.
 ## Technical Debt / Future Work
 
 _Items discovered during task execution are logged here by agents._
+
+### Pending Tasks
+- **TP-001:** Add `.pi/taskplane.json` to `.gitignore` — machine-specific metadata
+- **TP-002:** Verify no runtime files committed — pre-PR cleanup check
+- **TP-003:** Add basic tests for `bridge.py` — unit tests with pytest
