@@ -1,2 +1,0 @@
-{"batchId":"20260328T122821","phase":"completed","mode":"repo","taskId":"AUDIT-001","status":"skipped","classification":"unknown","cost":0,"durationSec":125,"retries":0,"repoId":null,"exitReason":"Paused by user (/orch-pause)","startedAt":1774726103509,"endedAt":1774726228773}
-{"batchId":"20260328T122821","phase":"completed","mode":"repo","taskId":"AUDIT-002","status":"skipped","classification":"unknown","cost":0,"durationSec":0,"retries":0,"repoId":null,"exitReason":"Skipped due to pause signal","startedAt":null,"endedAt":null}
