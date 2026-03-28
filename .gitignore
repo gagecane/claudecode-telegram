@@ -20,7 +20,8 @@ __pycache__/
 .pi/telemetry/
 .pi/verification/
 .worktrees/
-taskplane-tasks/
 
 # Pi project-local packages (if using pi install -l)
 .pi/npm/
+
+.taskplane-tasks/

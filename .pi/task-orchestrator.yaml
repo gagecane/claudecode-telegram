@@ -6,7 +6,7 @@
 # Edit freely — this file is owned by you, not the package.
 
 orchestrator:
-  max_lanes: 1
+  max_lanes: 3
   worktree_location: "subdirectory"
   worktree_prefix: "claudecode-telegram-wt"
   batch_id_format: "timestamp"
